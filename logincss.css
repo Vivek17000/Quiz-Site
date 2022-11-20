@@ -1,0 +1,119 @@
+body{
+    font-family: 'Rancho', cursive;
+    margin:0px;
+    padding:0px;
+    overflow-x: hidden; 
+    width:100%;
+    background:linear-gradient(90deg,#570A57,#A91079,#F806CC);
+    }
+.loginbox{
+   width:25vw;
+   height:65vh;
+   margin:auto;
+   margin-top:10%;
+   margin-bottom: 10%;
+  
+   background-color:transparent;
+   position:relative;
+   overflow: hidden;
+   font-size:2.5rem;
+
+
+}
+.loginbox::before{
+    content:'';
+    position: absolute;
+    width:30vw;
+    height:50vh;
+    top:-20%;
+    left:-70%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,#0accfc,#03e8fd);
+    animation: animate 6s linear infinite;
+    
+}
+.loginbox::after{
+    content:'';
+    position: absolute;
+    width:30vw;
+    height:50vh;
+    top:-20%;
+    left:-70%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,#08aff6,#05aff7);
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animate {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+    
+}
+
+form{
+    position:absolute;
+    font-size:2rem;
+    padding: 17% 15% 7%;
+    /* padding-left:10% ; */
+    background-color: rgb(74, 76, 79);
+    color:rgb(253, 251, 251);
+    inset:4px;
+    z-index:10;
+    
+    
+}
+input:hover{
+    transform:scale(1.1);
+}
+input{
+    height: 5vh;
+    margin-bottom:20%;
+    background-color: #03e8fd;
+}
+button{
+    position:absolute;
+    top:70%;
+    left:45%;
+    z-index: 10;
+    background-color: #02c9f6;
+    width:10vw;
+    border: none;
+    font-size:1.5rem;
+    color:azure;
+}
+h1{
+    text-align: center;
+    font-weight:bolder;
+    margin-bottom: 20%;
+    font-size:3rem;
+    
+}
+
+.username{
+    margin-right: 20px;
+}
+.password{
+        margin-right:30px;
+}
+
+.user
+{    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+
+.pass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
