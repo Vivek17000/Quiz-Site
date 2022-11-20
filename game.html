@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Game</title>
+  <link href="gameStyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <button  onclick="login()" class="login_btn">LOGIN PAGE</button>
+  <button  onclick="quiz()" class="quiz_btn">GOTO QUIZ MODE</button>
+
+  <div class="container">
+    <div id="score"></div>
+    <canvas id="game" width="375" height="375"></canvas>
+    <div id="introduction">Hold down the mouse to stretch out a stick</div>
+    <div id="perfect">DOUBLE SCORE</div>
+    <button id="restart">RESTART</button>
+  </div>
+
+  
+
+  <script src="game.js"></script>
+  
+</body>
+
+</html>
